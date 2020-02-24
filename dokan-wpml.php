@@ -156,6 +156,9 @@ class Dokan_WPML {
         }
 
         if ( ! empty( $name ) ) {
+            if ( $my_current_lang ) {
+                $name = apply_filters( 'wpml_translate_single_string', $name, 'WP Endpoints', $name, $my_current_lang );
+            }
             $url = $this->get_dokan_url_for_language( ICL_LANGUAGE_CODE ).$name.'/';
         } else {
             $url = $this->get_dokan_url_for_language( ICL_LANGUAGE_CODE );
