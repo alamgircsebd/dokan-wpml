@@ -188,7 +188,7 @@ class Dokan_WPML {
     }
 
     /**
-     * Replace dashboard key
+     * Replace dashboard key language wise
      *
      * @param array $urls
      *
